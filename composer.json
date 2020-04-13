@@ -1,0 +1,15 @@
+{
+    "name": "findinfile/php7",
+    "description": "Library for find string in file on PHP 7",
+    "type": "library",
+    "authors": [
+        {
+            "name": "temo",
+            "email": "anemaliy@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpunit/phpunit": "^9.2@dev"
+    }
+}
