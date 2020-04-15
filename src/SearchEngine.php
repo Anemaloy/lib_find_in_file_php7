@@ -15,7 +15,6 @@ class SearchEngine
 
     public function __construct(Sources $source, SearchTypes $searchType)
     {
-
         $this->source = $source;
         $this->searchType = $searchType;
     }
@@ -25,7 +24,6 @@ class SearchEngine
         $index = 0;
         $lines = $this->source->getIterator();
         foreach ($lines as $line) {
-
             $positionInLine = $this->searchType->search($line, $needle);
             if ($positionInLine->isFound()) {
                 return new StringOnFileTrue($index, $positionInLine->charPosition());

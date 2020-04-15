@@ -2,7 +2,7 @@
 require_once 'vendor/autoload.php';
 
 
-$source = new \SearchEngine\Sources\LocalFile('test.txt');
+$source = new \SearchEngine\Sources\RemoteSource('http://temo.icu/test.txt');
 
 $searchType = new \SearchEngine\SearchTypes\SearchStringPosition();
 
